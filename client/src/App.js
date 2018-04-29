@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
 
-import './App.css'
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -14,7 +12,7 @@ class App extends Component {
 
   componentWillMount() {
     if (this.web3 && this.web3.isConnected()) {
-      this.setState({isConnected: true})
+      this.setState({ isConnected: true })
     }
   }
 
